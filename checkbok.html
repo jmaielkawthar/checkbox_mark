@@ -1,0 +1,131 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+form{
+    position: relative;
+}
+    /* The container */
+label {
+        display: block;
+        position: relative;
+        padding-right: 10px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        font-size: 22px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    /* Create a custom checkbox */
+    input{
+        position: absolute;
+        left: 6px;
+         top: 2px;
+        height: 25px;
+        width: 25px;
+         background-color: white;
+   border:1px solid red;
+    }
+    input:after{
+        content: "";
+        position: absolute;
+        display: none;
+    }
+    /* Show the checkmark when checked */
+    label input:checked:after{
+        display: block;
+    }
+    /* Style the checkmark/indicator */
+    label input[type="checkbox"]:after {
+        height: 25px;
+        width: 25px;
+        position: absolute;
+        left: 6px;
+        top: 2px;
+
+        
+         content: "\2713";
+    }
+       /* Hide the browser's default checkbox */
+       label  input[type="checkbox"] {
+        position: absolute;
+        cursor: pointer;
+        padding: 5px;
+        height: 25px;
+        width: 25px;
+        appearance: none;
+        background-color: white;
+    }
+    [type="checkbox"]:checked {
+        height: 25px;
+        width: 25px;
+        position: absolute;
+        left: 6px;
+         top: 2px;
+        content: "\2713";
+        appearance: none !important;
+    background-color: white !important;
+        color: #725638 !important;
+        border: 1px solid #9C9C9C !important;
+    }
+    [type="checkbox"]:not(:checked){
+        height: 25px;
+        width: 25px;
+        border: 1px solid #9C9C9C !important;
+        position: absolute;
+        left: 6px;
+         top: 2px;
+        content: "";
+    }
+    [type="checkbox"]{
+        height: 25px;
+        width: 25px;
+        border: 1px solid #9C9C9C !important;
+        position: absolute;
+        left: 6px;
+       top: 2px;
+        content: "";
+    }
+   </style>
+</head>
+<body>
+  <form>
+    <div id="cc-window" data-nosnippet="true" role="dialog" aria-live="polite" aria-label="cookieconsent" aria-describedby="cookieconsent:desc" class="cc-window cc-floating cc-type-categories cc-theme-minimal cc-center cc-color-override--304263656  cmplz-categories-visible" >
+                <div class="cmplz-categories-wrap">
+                    <label for="cmplz_functional">
+                        <input id="cmplz_functional"  tabindex="0" data-category="cmplz_functional" class="cmplz-consent-checkbox cmplz-classic cmplz-classic-checkbox cmplz_functional" checked="" disabled="" type="checkbox">
+                        Basis
+                            <div class="cmplz_functional-text">
+                                Dies sind die Cookies, die für den reibungslosen Ablauf dieser Website zwingend notwendig sind.
+                            </div>
+                    </label>
+                </div>
+                <div class="cmplz-categories-wrap">
+                        <label for="cmplz_stats">
+                            <input id="cmplz_stats" style="color:#3d4551" tabindex="0" data-category="cmplz_stats" class="cmplz-consent-checkbox cmplz-classic cmplz-classic-checkbox cmplz_stats" type="checkbox">
+                            Statistik
+                            <div class="cmplz_stats-text">
+                                Der Schutz Ihrer Daten ist und wichtig. Wir sammeln diese deshalb nur anonymisiert.
+
+                            </div>
+                        </label>
+                </div>
+                <div class="cmplz-categories-wrap">
+                        <label for="cmplz_marketing">
+                            <input id="cmplz_marketing"  tabindex="0" data-category="cmplz_marketing" class="cmplz-consent-checkbox cmplz-classic cmplz-classic-checkbox cmplz_marketing" type="checkbox">
+                            Marketing
+                            <div class="cmplz_marketing-text">
+                                Marketing-Cookies werden verwendet, um Besuchern 
+                            </div>
+                        </label>
+                </div>
+    </div>       
+</form>
+</body>
+</html>
+
